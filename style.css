@@ -1,5 +1,18 @@
+* {
+  font-family: Roboto;
+}
+
 body {
   background-color: #d9d9d9;
   padding: 12px;
-  font-family: Roboto;
+}
+
+h4 {
+  text-decoration: underline;
+}
+
+img#profile-pic {
+  border-style: outset;
+  border-radius: 10px;
+  border-width: 10px;
 }
