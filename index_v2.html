@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+
+  <head>    
+    <title>Nicbuitr's Site</title>
+    <link rel="icon" type="image/png" href="./favicon.ico">
+    <!-- Start of Bootstrap Libraries -->
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- End of Bootstrap Libraries -->
+
+    <!-- Google Fonts Library -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- Start of Custom Styles and Scripts -->
+    <link rel="stylesheet" href="style.css">
+    <script src="./js/index.js"></script>
+    <!-- End of Custom Styles and Scripts -->
+  </head>
+
+  <body class="body">
+    <!-- Navigation -->
+    <nav class="navbar-custom navbar navbar-inverse navbar-fixed-top"> 
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-item navbar-brand" href="#">
+          <span class="glyphicon glyphicon-arrow-up"></span>
+            TOP
+          <span class="glyphicon glyphicon-arrow-up"></span>
+        </a>      
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li>
+            <a class="navbar-item" href="./index.html">
+              <span class="glyphicon glyphicon-home"></span>
+              Home
+            </a>
+          </li>
+          <li>
+            <a class="navbar-item" href="#acerca">
+              <span class="glyphicon glyphicon-user"></span>
+              Acerca
+            </a>
+          </li>
+          <li>
+            <a class="navbar-item" href="#links">
+              <span class="glyphicon glyphicon-link"></span>
+              Links de Inter&eacute;s
+            </a>
+          </li>
+          <li>
+            <a class="navbar-item" href="#social">
+              <span class="glyphicon glyphicon-glass"></span>
+              Social
+            </a>
+          </li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="navbar-item" href="mailto:n.buitrago29@uniandes.edu.co"><span class="glyphicon glyphicon-envelope"></span> E-Mail</a></li>
+          <li><a class="navbar-item" onclick="turnOnOff()" id="OnOff"><span class="glyphicon glyphicon-off"></span> On/Off</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div id="WebSiteContent">
+    <header class="container header">  
+      <img src="./img/klostrag_work.png" alt="Imagen de Nicolás" class="profile-pic">
+      <h2 class="name">Nicolás Buitrago Castaño</h2>
+      <h4>(@nicbuitr)</h4>
+      <h4>Estudiante de Ingeniería de Sistemas y Computación</h4>
+    </header>
+    <section class="jumbotron content-section" id="acerca">
+      <div class="container">
+        <div class="row">     
+          <h2>
+            <span class="glyphicon glyphicon-user"></span> 
+            Acerca de Mi
+            <span class="glyphicon glyphicon-user"></span> 
+          </h2>
+        </div>
+        <div class="row content">
+          <p>
+            Nací en Armenia, Quindío el 18 de mayo de 1989 pero me crié en Bogotá desde el primer año. Actualmente mi propósito es terminar la carrera para continuar con mi proyecto de vida.
+
+            En ésta ciudad tan caótica, mi medio preferido de transporte es la motocicleta ya que ella permite evadir la mayoría de los largos y lentos trancones permanentes que ocurren en la capital mientras gran parte de sus habitantes intentan llegar por los medios posibles a sus lugares de trabajo, estudio, ocio u hogar.
+          </p>
+          <div class="container">
+            <img class="img-responsive" src="https://scontent.fbog2-2.fna.fbcdn.net/v/t1.0-9/10420317_10153332400425843_720452431580082721_n.jpg?oh=88f175ce386a97d2388b2416e1c16802&amp;oe=5936269D" alt="Motorcycle Riding">
+            <h6>&copy; Nicolás Camino al Trabajo</h6>
+           </div>         
+        </div>            
+      </div>
+    </section>
+
+    <section class="container separator"></section>
+
+    <section class="jumbotron content-section" id="links">
+      <div class="container">
+        <div class="row">     
+          <h2>
+            <span class="glyphicon glyphicon-link"></span> 
+            Links de Inter&eacute;s
+            <span class="glyphicon glyphicon-link"></span> 
+          </h2>
+        </div>
+        <div class="row content">
+          <div class="col-sm-6">
+            <ul align="left">
+              <h4 class="header-links" id="links">Links del curso:</h4>
+              <li> 
+                <a href="http://johnguerra.co" target="_blank">Website del Profesor John Guerra </a>
+              </li>
+              <li>
+                Twitter <a href="http://bit.ly/2kJl1ia" target="_blank">#WebDev @Uniandes</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-sm-6">
+            <ol align="left">
+              <h4 class="header-links">Links Proyectos:</h4>
+              <li> 
+                <a href="./index.html">WebSite V1 </a>
+              </li> 
+              <li> 
+                <a href="./bootstrap.html">Bootstrap </a>
+              </li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section> 
+    <section class="container separator"></section>
+      <section class="jumbotron content-section" id="social">
+        <div class="container">
+          <div class="row">     
+            <h2>
+              <span class="glyphicon glyphicon-glass"></span> 
+              Social
+              <span class="glyphicon glyphicon-glass"></span> 
+            </h2>
+          </div>
+
+          <div class="row content">
+           <div class="col-xs-4 social-item">
+            <a href="https://github.com/nicbuitr" target="_blank">
+              <img src="./img/GitHubIco.png" alt="GitHub Icon">
+            </a>
+          </div>
+          <div class="col-xs-4 social-item">
+            <a href="https://twitter.com/nicbuitr" target="_blank">
+              <img src="./img/TwitterIco.png" height="32px" alt="Twitter Icon">
+            </a>
+          </div>
+          <div class="col-xs-4 social-item">
+            <a href="https://web-dev-uniandes.slack.com/messages/@nicbuitr/" target="_blank">
+              <img src="./img/SlackIco.png" height="32px" alt="Slack Icon">
+            </a>
+          </div>
+        </div>
+      </div>
+    </section> 
+
+    <footer class="container footer">    
+      <div class="row">
+        <p>&copy; 2017 Nicol&aacute;s Buitrago C</p>
+      </div>
+    </footer>
+    </div>
+  </body>
+</html>
