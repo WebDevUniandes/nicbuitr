@@ -4,30 +4,25 @@ function turnOnOff(){
 
 	var content = document.getElementById("WebSiteContent");
 	var navItems = document.getElementsByClassName("navbar-item");
+	var displayToSet = "none";
 	if (currentState) {
-		content.style.display = "none";
-
-		for (var i = 0; i < navItems.length; i++) {
-			if(navItems[i] != undefined){
-				if (navItems[i].id != "OnOff"){
-					navItems[i].style.display = "none";
-				}
-			}
-		}
 		document.getElementById("OnOff").style.backgroundColor = "rgba(26, 243, 0, 0.73)";
 		currentState = false;
 	}
 	else{
-		content.style.display = "block";
-		for (var i = 0; i < navItems.length; i++) {
-			if(navItems[i] != undefined){
-				if (navItems[i].id != "OnOff"){
-					navItems[i].style.display = "block";
-				}
+		document.getElementById("OnOff").style.backgroundColor = "rgba(232, 0, 0, 0.73)";
+		displayToSet = "block";
+		currentState = true;
+	}
+
+	content.style.display = displayToSet;
+
+	for (var i = 0; i < navItems.length; i++) {
+		if(navItems[i] != undefined){
+			if (navItems[i].id != "OnOff"){
+				navItems[i].style.display = displayToSet;
 			}
 		}
-		document.getElementById("OnOff").style.backgroundColor = "rgba(232, 0, 0, 0.73)";
-		currentState = true;
 	}
 
 }
