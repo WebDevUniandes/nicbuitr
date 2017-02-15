@@ -48,7 +48,7 @@
 
 .profile-pic {
 	border-style: outset;
-	border-radius: 10px;
+	border-radius: 1em;
 	border-width: 10px;
 	height: auto;
 	max-width: 100%;
@@ -73,9 +73,10 @@ p {
 	padding: 12px;
 }
 
-.social-item{
+.col-item{
 	border-style: groove;
 	padding: 1%;
+	border-radius: 1em;
 }
 
 .footer	{
