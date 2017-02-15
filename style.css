@@ -38,6 +38,9 @@
 	border-style: inset;
 }
 
+.vid-responsive {
+	max-width: 100%;
+}
 .header, .footer, .separator{
 	padding: 3%;
 	background-color: #d6dde8;
